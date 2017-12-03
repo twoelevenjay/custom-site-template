@@ -10,7 +10,7 @@ server {
     set          $upstream {upstream};
 
     include      /etc/nginx/nginx-wp-common.conf;
-	ssl on;
-	ssl_certificate /srv/config/nginx-config/sites/ssl/{{DOMAINS_HERE}}.cert;
-	ssl_certificate_key /srv/config/nginx-config/sites/ssl/{{DOMAINS_HERE}}.key;
+    ssl on;
+    ssl_certificate /srv/config/nginx-config/sites/ssl/{{DOMAINS_HERE}}.cert;
+    ssl_certificate_key /srv/config/nginx-config/sites/ssl/{{DOMAINS_HERE}}.key;
 }
